@@ -4,12 +4,11 @@
  * @date 2022/9/23
  */
 
-import React from 'react'
 import tw from 'tailwind-styled-components'
 import styled from 'styled-components'
 
 const AutoFill = styled.div`
-    min-height: 100vh;
+
 `
 
 const StyledSection = tw(AutoFill)`
@@ -18,6 +17,8 @@ const StyledSection = tw(AutoFill)`
     flex
     flex-none
     min-w-full
+    min-h-screen
+    mobile:h-[120vh]
     justify-center
     items-center
     snap-center

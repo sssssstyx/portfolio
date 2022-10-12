@@ -14,7 +14,7 @@ import Footers from './Footers'
 
 export default function Home () {
     return (
-        <StyledSection bg={'bg-dim'}>
+        <StyledSection bg={'bg-dim'} className="mobile:h-screen">
             <StyledContainer>
                 <Typing />
                 <NameCubes />

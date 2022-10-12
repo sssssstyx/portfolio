@@ -17,14 +17,14 @@ export default function typeReducer  (state, action) {
         case WAIT_TO_TYPE:
             return {
                 isTyping: true,
-                speed: 1000,
-                currSentence: action.payload
+                speed: action.speed,
+                currSentence: state.currSentence
             }
         case WAIT_TO_DELETE:
             return {
                 isTyping: false,
                 speed: action.speed,
-                currSentence: action.payload
+                currSentence: state.currSentence
             }
         default:
             return state

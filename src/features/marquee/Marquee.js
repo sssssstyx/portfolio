@@ -14,15 +14,15 @@ export default function Marquee ({ text, styles }) {
                 <span>{text}</span>
                 <span>{text}</span>
                 <span>{text}</span>
-                <span className="mid:hidden">{text}</span>
-                <span className="mid:hidden">{text}</span>
+                <span className="marquee:hidden">{text}</span>
+                <span className="marquee:hidden">{text}</span>
             </StyledText>
             <StyledText>
                 <span>{text}</span>
                 <span>{text}</span>
                 <span>{text}</span>
-                <span className="mid:hidden">{text}</span>
-                <span className="mid:hidden">{text}</span>
+                <span className="marquee:hidden">{text}</span>
+                <span className="marquee:hidden">{text}</span>
             </StyledText>
             <div className="h-28 top-28"></div>
         </StyledScrollingTexts>

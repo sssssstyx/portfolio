@@ -14,14 +14,17 @@ export default function Experience () {
     /* horizontal words scrolling infinitely */
     const experiences = "Experience"
     return (
-        <StyledSection bg={'bg-glow'}>
+        <StyledSection bg={'bg-ventura'}>
             {/* the component for infinite horizontal texts */}
             <Marquee
                 text={experiences}
                 styles={'bg-ventura text-glow h-full text-3xl'}
             />
-            {/* skill stacks displaying */}
-            <Stacks />
+            <div className="absolute inset-0 mobile:h-[90vh] m-auto h-full w-full flex justify-center items-center">
+                {/* skill stacks displaying */}
+                <Stacks />
+            </div>
+            
         </StyledSection>
     )
 }

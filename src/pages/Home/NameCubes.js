@@ -16,7 +16,7 @@ const NameCubes = () => {
             <div className="absolute top-0 -right-16 md:top-6 md:right-6 lg:top-9 lg:right-36 scale-[0.6] md:scale-90 lg:scale-125 xl:scale-150 rotate-45 lg:rotate-[50deg]">
                 <Spline scene="https://prod.spline.design/kft8aJWWcGn5tkFp/scene.splinecode" />
             </div>
-            <div className="absolute bottom-2 -right-12 md:right-0 hsm:-bottom-8 lg:bottom-16 lg:right-16 xl:right-3 scale-[0.6] md:scale-90 lg:scale-125 xl:scale-150 -rotate-[15deg]">
+            <div className="absolute bottom-5 -right-12 md:right-0 hsm:-bottom-8 lg:bottom-16 lg:right-16 xl:right-3 scale-[0.6] md:scale-90 lg:scale-125 xl:scale-150 -rotate-[15deg]">
                 <Spline scene="https://prod.spline.design/LZkTasidQmVj6e3l/scene.splinecode" />
             </div>
         </div>

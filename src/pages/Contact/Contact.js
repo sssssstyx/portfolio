@@ -15,9 +15,11 @@ export default function Contact () {
    
     return (
         <StyledSection bg={'bg-dim'}>
-            <div className=""></div>
-            <Marquee text={contact} styles={'bg-glow text-ventura h-16 sm:h-20 lg:h-24 2xl:h-28 '} />
-            <ContactForm />
+            <div className="absolute inset-0 mobile:h-[90vh] m-auto h-full w-full flex justify-center items-center">
+                <Marquee text={contact} styles={'bg-glow text-ventura h-16 sm:h-20 lg:h-24 2xl:h-28'} />
+                <ContactForm />
+            </div>
+
         </StyledSection>
     )
 }

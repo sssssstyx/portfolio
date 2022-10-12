@@ -84,9 +84,12 @@ export default function Stacks () {
 }
 
 const StyledStacks = tw.div`
-    absolute
+    relative
+    flex
     hsm:top-20
-    min-w-[280px] w-3/4 max-w-[1280px]
+    mx-20
+    mobile:mx-12
+    min-w-[280px] w-full max-w-[1280px]
     backdrop-blur-sm
     rounded-lg
     grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-12 justify-items-center items-stretch

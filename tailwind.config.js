@@ -23,7 +23,8 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
-      'mid': {'max': '1398px'},
+      'marquee': {'max': '1398px'},
+      'mobile':{'max': '768px'},
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,

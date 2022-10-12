@@ -15,7 +15,7 @@ const StyledApp = (props) => {
     useHorizonScroll(paraRef)
     
     return (
-        <StyledParallax ref={paraRef}>
+        <StyledParallax ref={paraRef} className="inset-0">
             {props.children}
         </StyledParallax>
     )

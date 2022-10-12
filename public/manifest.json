@@ -4,13 +4,13 @@
   "icons": [
     {
       "src": "happy.png",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "32x32",
       "type": "image/png"
     },
     {
       "src": "happy256.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "256x256"
     },
     {
       "src": "happy512.png",

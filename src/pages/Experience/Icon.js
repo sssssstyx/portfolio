@@ -24,7 +24,7 @@ const StyledIcon = tw.div`
     hsm:w-24
     w-full
     max-w-[350px] min-w-[120px]
-    
+    backdrop-blur-sm
     h-full
     flex flex-col items-center justify-center rounded-2xl gap-2
     py-5
