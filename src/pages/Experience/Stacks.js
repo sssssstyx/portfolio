@@ -86,7 +86,6 @@ export default function Stacks () {
 const StyledStacks = tw.div`
     relative
     flex
-    hsm:top-20
     mx-20
     mobile:mx-12
     min-w-[280px] w-full max-w-[1280px]

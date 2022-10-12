@@ -14,7 +14,7 @@ export const useHorizonScroll = (propsRef) => {
     const scrollHandler = (e) => {
         e.preventDefault()
         propsRef.current.scrollBy({
-            left: e.deltaY < 0 ? -800 : 800,
+            left: e.deltaY < 0 ? -350 : 350,
             behavior: 'smooth'
         })
     }
@@ -38,5 +38,5 @@ export const useHorizonScroll = (propsRef) => {
             // default true
             passive: false,
         })
-    }, [propsRef])
+    }, [propsRef, scrollWithDebounce])
 }

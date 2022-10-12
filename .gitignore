@@ -14,7 +14,8 @@
 # misc
 .DS_Store
 .idea
-.settings.json
+.vscode
+.fleet
 .env.local
 .env.development.local
 .env.test.local

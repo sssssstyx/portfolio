@@ -26,10 +26,10 @@ const StyledParallax = tw.div`
     flex
     flex-col
     md:flex-row
-    snap-proximity
+    snap-mandatory
     snap-y
     md:snap-x
-    md:overflow-y-hidden
+    md:snap-proximity
 `
 /* // This is the earlier version of Styled Parallax
 const StyledParallax = tw(NoScrollBarStyles)`
