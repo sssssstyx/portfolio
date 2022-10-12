@@ -8,11 +8,6 @@
       "type": "image/png"
     },
     {
-      "src": "happy256.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-    {
       "src": "happy512.png",
       "type": "image/png",
       "sizes": "512x512"

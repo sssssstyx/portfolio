@@ -24,16 +24,13 @@ export const useHorizonScroll = (propsRef) => {
     
     /* event listener to "wheel" event */
     useEffect(() => {
-        
         if (isMobile || window.innerWidth < 769) {
             return
         }
-        
         window.addEventListener("wheel", scrollWithDebounce, {
             // default true
             passive: false,
         })
-        
         return () => window.removeEventListener("wheel", scrollWithDebounce, {
             // default true
             passive: false,
