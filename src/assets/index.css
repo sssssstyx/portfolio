@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +11,7 @@ body {
 }
 html {
     /* set snap for vertical view */
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow-y: hidden;
     overflow-x: scroll;
