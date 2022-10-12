@@ -10,19 +10,19 @@ import Typing from '../../features/typing/Typing'
 
 export default function Showcase () {
     return (
-        <StyledTyping>
+        <StyledShowcase>
             <Typing />
             <div className="gap-6 text-2xl md:text-3xl xl:text-[2.75rem] hsm:text-3xl text-black md:leading-10 xl:leading-[50px]">
                 <span>Welcome!🥰🥰🥰</span>
                 <br/>
                 <span>Try to touch the awesome letters👆</span>
             </div>
-        </StyledTyping>
+        </StyledShowcase>
     )
 }
 
 // tailwindCSS for animation typing
-const StyledTyping = tw.div`
+const StyledShowcase = tw.div`
     flex
     flex-col
     gap-8
