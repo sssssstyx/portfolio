@@ -6,7 +6,7 @@
 
 import React from 'react'
 import tw from 'tailwind-styled-components'
-import Typing from '../../features/typing/Typing'
+import Typing from '../../features/Typing/Typing'
 
 export default function Showcase () {
     return (
@@ -21,7 +21,7 @@ export default function Showcase () {
     )
 }
 
-// tailwindCSS for animation typing
+// tailwindCSS for animation Typing
 const StyledShowcase = tw.div`
     flex
     flex-col

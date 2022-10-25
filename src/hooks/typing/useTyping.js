@@ -5,7 +5,7 @@
  */
 
 import { useCallback, useEffect, useReducer, useRef } from 'react'
-import typeReducer from '../stores/reducers/typeReducer'
+import typeReducer from '../../stores/reducers/typeReducer'
 import {
     TYPE_SPEED,
     DELETE_SPEED,
@@ -15,7 +15,7 @@ import {
     DELETE,
     WAIT_TO_TYPE,
     WAIT_TO_DELETE
-} from '../stores/contants/constants'
+} from '../../stores/contants/constants'
 
 // initial words to type
 const sentences = [
@@ -24,10 +24,10 @@ const sentences = [
     "Full Stack"
 ]
 
-// custom hook for typing words animation
+// custom hook for Typing words animation
 export const useTyping = (words = sentences) => {
     /* States needed to be managed
-     * whether is typing, set as false when rendering.
+     * whether is Typing, set as false when rendering.
      * current sentence to store the state of words...
      * speed sets the delay time in milliseconds......
      **/
@@ -43,13 +43,13 @@ export const useTyping = (words = sentences) => {
     // ref for loop number, used to show the next sentence in array
     const loopNum = useRef(0)
     
-    // handler for typing animation as a callback function
+    // handler for Typing animation as a callback function
     const handler = useCallback(()=>{
         /* loop count number like 1000 mod(_sentence array's size) is the certain index */
         const index = loopNum.current  % words.length
         const fullText = words[index]   /* set a variable to store the entire current sentence */
         
-        /* If is typing then add letters, if not then slice letters,
+        /* If is Typing then add letters, if not then slice letters,
          * this will be handled every time according to the time duration.
          * */
         let updateText = isTyping ?
@@ -60,8 +60,8 @@ export const useTyping = (words = sentences) => {
         /* There are 4 steps:
          * 1. First render the whole sentence, wait for a while, deleting the letters, for a quite quick speed...
          * 2. When finishing deleting, just wait for a while, and reload next sentence...
-         * 3. After reloading, just typing the letters...
-         * 4. Finishing typing the entire sentence, just wait for a while to delete...
+         * 3. After reloading, just Typing the letters...
+         * 4. Finishing Typing the entire sentence, just wait for a while to delete...
          * */
         /* when is deleting */
         if(!isTyping) {
@@ -74,7 +74,7 @@ export const useTyping = (words = sentences) => {
                 dispatch({type:WAIT_TO_TYPE, speed: WAIT_DURATION})
             }
         }
-        /* when is typing */
+        /* when is Typing */
         else {
             /* dispatch TYPE: update new text in every TYPE_SPEED millisecond */
             dispatch({type:TYPE, payload:updateText, speed: TYPE_SPEED})

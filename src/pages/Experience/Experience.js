@@ -7,7 +7,7 @@
 import React from 'react'
 
 import StyledSection from '../../assets/StyledSection'
-import Marquee from '../../features/marquee/Marquee'
+import Marquee from '../../features/Marquee/Marquee'
 import Stacks from './Stacks'
 
 export default function Experience () {
