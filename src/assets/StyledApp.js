@@ -13,7 +13,7 @@ const StyledApp = (props) => {
     const [scrollX, setScrollX] = useState(0)   // set horizontal scroll distance
     
     const wheelEvent = (e) => {
-        let newX = scrollX - e.deltaY   // less scrolling speed
+        let newX = scrollX - e.deltaY / 5   // less scrolling speed
         const rightLimit = -(props.children.length) * screenWidth // 3 screens width for one more page on the right side
         const leftLimit = screenWidth // 1 screen width for one more page on the left side
         const leftPosition = -(props.children.length - 1) * screenWidth // 2 screen width
