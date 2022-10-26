@@ -24,7 +24,6 @@ export default function Marquee ({ text, styles }) {
                 <span className="marquee:hidden">{text}</span>
                 <span className="marquee:hidden">{text}</span>
             </StyledText>
-            <div className="h-28 top-28"></div>
         </StyledScrollingTexts>
     )
 }
