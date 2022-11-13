@@ -5,5 +5,6 @@
 */
 
 export * from './debounce/useDebounce'
+export * from './loading/useLoading'
 export * from './typing/useTyping'
-export * from './window/useWindowSize'
+export * from './window/useWindow'

@@ -128,6 +128,10 @@ module.exports = {
       bounce: 'bounce 1s infinite',
       blink: 'blink 1.5s ease-in-out infinite',
       scroll: 'scrolling  8s linear infinite',
+      load:'loading 3s linear',
+      rightforward: 'rightforward 3s linear',
+      jump1: 'jump1 1s ease-in infinite',
+      jump2: 'jump2 1s ease-in infinite',
     },
     aspectRatio: {
       auto: 'auto',
@@ -617,6 +621,62 @@ module.exports = {
           left: '-150%',
         },
     },
+      loading: {
+        from: {
+          transform: 'scale(1.5)',
+        },
+        "50%":{
+          transform: 'scale(0.175) translate3d(0,0,0)',
+        },
+        to: {
+          transform: 'scale(0.175) translate3d(0, 500vh, 0)',
+        }
+      },
+      rightforward: {
+        from:{
+          transform: 'translate3d(0,0,0)',
+        },
+        "50%":{
+          transform: 'translate3d(0,0,0)',
+        },
+        to: {
+          transform: 'translate3d(0, 87.5vh, 0)',
+        },
+      },
+      jump1: {
+        "0%": {
+          transform:'none',
+        },
+        "25%": {
+          transform: 'translate3d(0, -12.5%, 0)'
+        },
+        "50%": {
+          transform: 'translate3d(0, 0, 0)'
+        },
+        "75%": {
+          transform: 'translate3d(0, -12.5%, 0)'
+        },
+        to: {
+          transform: 'none'
+        },
+      },
+      jump2: {
+        "0%": {
+          transform:'none',
+        },
+        "25%": {
+          transform: 'translate3d(0, 12.5%, 0)'
+        },
+        "50%": {
+          transform: 'translate3d(0, 0, 0)'
+        },
+        "75%": {
+          transform: 'translate3d(0, 12.5%, 0)'
+        },
+        to: {
+          transform: 'none'
+        },
+      }
     },
     letterSpacing: {
       tighter: '-0.05em',

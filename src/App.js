@@ -3,20 +3,19 @@ import Home from './pages/Home'
 import StyledApp from './assets/StyledApp'
 import Experience from './pages/Experience/Experience'
 import Contact from './pages/Contact/Contact'
-
 // const Contact = React.lazy(() => import('./pages/Contact/Contact'))
 // const Experience = React.lazy(() => import('./pages/Experience/Experience'))
 
 function App () {
     return (
-        <>
+        <React.Fragment>
             <StyledApp>
-                <Home />
+                <Home/>
                 {/*<Projects />*/}
-                <Experience />
-                <Contact />
+                <Experience/>
+                <Contact/>
             </StyledApp>
-        </>
+        </React.Fragment>
     )
 }
 

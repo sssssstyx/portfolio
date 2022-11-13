@@ -20,7 +20,7 @@ export default function Experience () {
                 text={experiences}
                 styles={'bg-ventura text-glow h-full text-3xl'}
             />
-            <div className="absolute inset-0 mobile:h-[90vh] m-auto h-full w-full flex justify-center items-center">
+            <div className="absolute inset-0 mobile:h-[90vh]  h-full w-full flex justify-center items-center">
                 {/* skill stacks displaying */}
                 <Stacks />
             </div>
