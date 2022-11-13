@@ -12,7 +12,7 @@ import InitScreen from '../pages/Loading/InitScreen'
 const StyledApp = (props) => {
     const isLoading = useLoading()
     
-    const { screenWidth } = useWindow()
+    const {screenWidth} = useWindow()
     
     // const screenWidth = window.innerWidth
     const [scrollX, setScrollX] = useState(0)   // set horizontal scroll distance
@@ -22,7 +22,7 @@ const StyledApp = (props) => {
         
         let newX = scrollX - e.deltaY / 30   // less scrolling speed
         // let newX = scrollX - e.deltaY
-    
+        
         /* suppose scrolling all the elements(left) at right in 100% */
         const rightLimit = -(props.children.length) * 100
         // const rightLimit = -(props.children.length) * screenWidth
@@ -54,26 +54,25 @@ const StyledApp = (props) => {
     return (
         <React.Fragment>
             {
+                isLoading && <InitScreen/>
+            }
+            {
                 isMobile || screenWidth < 769 ?
                     // mobile devices
-                    isLoading ?
-                        <InitScreen/>
-                        :
-                        <div className="inset-0 flex flex-col ">
-                            {props.children}
-                        </div>
+                    <div className="inset-0 flex flex-col ">
+                        {props.children}
+                    </div>
                     :
                     // desktop devices
-                    isLoading ?
-                        <InitScreen/>
-                        :
-                        <div className="inset-0 flex flex-col md:flex-row snap-x snap-proximity" onWheel={wheelEvent}
-                             style={scrollStyles}>
-                            {/* have one more page on both left and right side for a continuing scrolling */}
-                            {props.children[props.children.length - 1]}
-                            {props.children}
-                            {props.children[0]}
-                        </div>
+                    <div className="inset-0 flex flex-col md:flex-row snap-x snap-proximity"
+                         onWheel={wheelEvent}
+                         style={scrollStyles}
+                    >
+                        {/* have one more page on both left and right side for a continuing scrolling */}
+                        {props.children[props.children.length - 1]}
+                        {props.children}
+                        {props.children[0]}
+                    </div>
             }
         </React.Fragment>
     )
